@@ -2,8 +2,8 @@
 //  DesuTests.m
 //  DesuTests
 //
-//  Created by Stefan Dasbach on 9/12/14.
-//  Copyright (c) 2014 NAFWA. All rights reserved.
+//  Created by Bram Wasti on 9/13/14.
+//  Copyright (c) 2014 bwasti. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>

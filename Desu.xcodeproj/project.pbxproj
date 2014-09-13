@@ -7,147 +7,151 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7BEEDE0319C3CCFB0033220E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEEDE0219C3CCFB0033220E /* Foundation.framework */; };
-		7BEEDE0519C3CCFB0033220E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEEDE0419C3CCFB0033220E /* CoreGraphics.framework */; };
-		7BEEDE0719C3CCFB0033220E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEEDE0619C3CCFB0033220E /* UIKit.framework */; };
-		7BEEDE0D19C3CCFB0033220E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BEEDE0B19C3CCFB0033220E /* InfoPlist.strings */; };
-		7BEEDE0F19C3CCFB0033220E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEEDE0E19C3CCFB0033220E /* main.m */; };
-		7BEEDE1319C3CCFB0033220E /* NFWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEEDE1219C3CCFB0033220E /* NFWAppDelegate.m */; };
-		7BEEDE1619C3CCFB0033220E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BEEDE1419C3CCFB0033220E /* Main.storyboard */; };
-		7BEEDE1919C3CCFB0033220E /* NFWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEEDE1819C3CCFB0033220E /* NFWViewController.m */; };
-		7BEEDE1B19C3CCFB0033220E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BEEDE1A19C3CCFB0033220E /* Images.xcassets */; };
-		7BEEDE2219C3CCFB0033220E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEEDE2119C3CCFB0033220E /* XCTest.framework */; };
-		7BEEDE2319C3CCFB0033220E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEEDE0219C3CCFB0033220E /* Foundation.framework */; };
-		7BEEDE2419C3CCFB0033220E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEEDE0619C3CCFB0033220E /* UIKit.framework */; };
-		7BEEDE2C19C3CCFB0033220E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BEEDE2A19C3CCFB0033220E /* InfoPlist.strings */; };
-		7BEEDE2E19C3CCFB0033220E /* DesuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEEDE2D19C3CCFB0033220E /* DesuTests.m */; };
+		EB9FF48419C4921000EB3548 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9FF48319C4921000EB3548 /* Foundation.framework */; };
+		EB9FF48619C4921000EB3548 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9FF48519C4921000EB3548 /* CoreGraphics.framework */; };
+		EB9FF48819C4921000EB3548 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9FF48719C4921000EB3548 /* UIKit.framework */; };
+		EB9FF48E19C4921000EB3548 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB9FF48C19C4921000EB3548 /* InfoPlist.strings */; };
+		EB9FF49019C4921000EB3548 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9FF48F19C4921000EB3548 /* main.m */; };
+		EB9FF49419C4921000EB3548 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9FF49319C4921000EB3548 /* AppDelegate.m */; };
+		EB9FF49619C4921000EB3548 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB9FF49519C4921000EB3548 /* Images.xcassets */; };
+		EB9FF49D19C4921000EB3548 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9FF49C19C4921000EB3548 /* XCTest.framework */; };
+		EB9FF49E19C4921000EB3548 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9FF48319C4921000EB3548 /* Foundation.framework */; };
+		EB9FF49F19C4921000EB3548 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9FF48719C4921000EB3548 /* UIKit.framework */; };
+		EB9FF4A719C4921000EB3548 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB9FF4A519C4921000EB3548 /* InfoPlist.strings */; };
+		EB9FF4A919C4921000EB3548 /* DesuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9FF4A819C4921000EB3548 /* DesuTests.m */; };
+		EB9FF4B419C492B300EB3548 /* Modulater.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9FF4B319C492B300EB3548 /* Modulater.m */; };
+		EB9FF4B719C4A2B400EB3548 /* Demodulater.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9FF4B619C4A2B400EB3548 /* Demodulater.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7BEEDE2519C3CCFB0033220E /* PBXContainerItemProxy */ = {
+		EB9FF4A019C4921000EB3548 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7BEEDDF719C3CCFB0033220E /* Project object */;
+			containerPortal = EB9FF47819C4921000EB3548 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7BEEDDFE19C3CCFB0033220E;
+			remoteGlobalIDString = EB9FF47F19C4921000EB3548;
 			remoteInfo = Desu;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7BEEDDFF19C3CCFB0033220E /* Desu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Desu.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7BEEDE0219C3CCFB0033220E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		7BEEDE0419C3CCFB0033220E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		7BEEDE0619C3CCFB0033220E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		7BEEDE0A19C3CCFB0033220E /* Desu-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Desu-Info.plist"; sourceTree = "<group>"; };
-		7BEEDE0C19C3CCFB0033220E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7BEEDE0E19C3CCFB0033220E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7BEEDE1019C3CCFB0033220E /* Desu-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Desu-Prefix.pch"; sourceTree = "<group>"; };
-		7BEEDE1119C3CCFB0033220E /* NFWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NFWAppDelegate.h; sourceTree = "<group>"; };
-		7BEEDE1219C3CCFB0033220E /* NFWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NFWAppDelegate.m; sourceTree = "<group>"; };
-		7BEEDE1519C3CCFB0033220E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7BEEDE1719C3CCFB0033220E /* NFWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NFWViewController.h; sourceTree = "<group>"; };
-		7BEEDE1819C3CCFB0033220E /* NFWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NFWViewController.m; sourceTree = "<group>"; };
-		7BEEDE1A19C3CCFB0033220E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		7BEEDE2019C3CCFB0033220E /* DesuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7BEEDE2119C3CCFB0033220E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		7BEEDE2919C3CCFB0033220E /* DesuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DesuTests-Info.plist"; sourceTree = "<group>"; };
-		7BEEDE2B19C3CCFB0033220E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7BEEDE2D19C3CCFB0033220E /* DesuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesuTests.m; sourceTree = "<group>"; };
+		EB9FF48019C4921000EB3548 /* Desu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Desu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB9FF48319C4921000EB3548 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EB9FF48519C4921000EB3548 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EB9FF48719C4921000EB3548 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EB9FF48B19C4921000EB3548 /* Desu-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Desu-Info.plist"; sourceTree = "<group>"; };
+		EB9FF48D19C4921000EB3548 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EB9FF48F19C4921000EB3548 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB9FF49119C4921000EB3548 /* Desu-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Desu-Prefix.pch"; sourceTree = "<group>"; };
+		EB9FF49219C4921000EB3548 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EB9FF49319C4921000EB3548 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EB9FF49519C4921000EB3548 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EB9FF49B19C4921000EB3548 /* DesuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB9FF49C19C4921000EB3548 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EB9FF4A419C4921000EB3548 /* DesuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DesuTests-Info.plist"; sourceTree = "<group>"; };
+		EB9FF4A619C4921000EB3548 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EB9FF4A819C4921000EB3548 /* DesuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesuTests.m; sourceTree = "<group>"; };
+		EB9FF4B219C492B300EB3548 /* Modulater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Modulater.h; sourceTree = "<group>"; };
+		EB9FF4B319C492B300EB3548 /* Modulater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Modulater.m; sourceTree = "<group>"; };
+		EB9FF4B519C4A2B400EB3548 /* Demodulater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demodulater.h; sourceTree = "<group>"; };
+		EB9FF4B619C4A2B400EB3548 /* Demodulater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demodulater.m; sourceTree = "<group>"; };
+		EB9FF4B819C4A57F00EB3548 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7BEEDDFC19C3CCFB0033220E /* Frameworks */ = {
+		EB9FF47D19C4921000EB3548 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BEEDE0519C3CCFB0033220E /* CoreGraphics.framework in Frameworks */,
-				7BEEDE0719C3CCFB0033220E /* UIKit.framework in Frameworks */,
-				7BEEDE0319C3CCFB0033220E /* Foundation.framework in Frameworks */,
+				EB9FF48619C4921000EB3548 /* CoreGraphics.framework in Frameworks */,
+				EB9FF48819C4921000EB3548 /* UIKit.framework in Frameworks */,
+				EB9FF48419C4921000EB3548 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7BEEDE1D19C3CCFB0033220E /* Frameworks */ = {
+		EB9FF49819C4921000EB3548 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BEEDE2219C3CCFB0033220E /* XCTest.framework in Frameworks */,
-				7BEEDE2419C3CCFB0033220E /* UIKit.framework in Frameworks */,
-				7BEEDE2319C3CCFB0033220E /* Foundation.framework in Frameworks */,
+				EB9FF49D19C4921000EB3548 /* XCTest.framework in Frameworks */,
+				EB9FF49F19C4921000EB3548 /* UIKit.framework in Frameworks */,
+				EB9FF49E19C4921000EB3548 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7BEEDDF619C3CCFB0033220E = {
+		EB9FF47719C4921000EB3548 = {
 			isa = PBXGroup;
 			children = (
-				7BEEDE0819C3CCFB0033220E /* Desu */,
-				7BEEDE2719C3CCFB0033220E /* DesuTests */,
-				7BEEDE0119C3CCFB0033220E /* Frameworks */,
-				7BEEDE0019C3CCFB0033220E /* Products */,
+				EB9FF48919C4921000EB3548 /* Desu */,
+				EB9FF4A219C4921000EB3548 /* DesuTests */,
+				EB9FF48219C4921000EB3548 /* Frameworks */,
+				EB9FF48119C4921000EB3548 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		7BEEDE0019C3CCFB0033220E /* Products */ = {
+		EB9FF48119C4921000EB3548 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7BEEDDFF19C3CCFB0033220E /* Desu.app */,
-				7BEEDE2019C3CCFB0033220E /* DesuTests.xctest */,
+				EB9FF48019C4921000EB3548 /* Desu.app */,
+				EB9FF49B19C4921000EB3548 /* DesuTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7BEEDE0119C3CCFB0033220E /* Frameworks */ = {
+		EB9FF48219C4921000EB3548 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7BEEDE0219C3CCFB0033220E /* Foundation.framework */,
-				7BEEDE0419C3CCFB0033220E /* CoreGraphics.framework */,
-				7BEEDE0619C3CCFB0033220E /* UIKit.framework */,
-				7BEEDE2119C3CCFB0033220E /* XCTest.framework */,
+				EB9FF48319C4921000EB3548 /* Foundation.framework */,
+				EB9FF48519C4921000EB3548 /* CoreGraphics.framework */,
+				EB9FF48719C4921000EB3548 /* UIKit.framework */,
+				EB9FF49C19C4921000EB3548 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7BEEDE0819C3CCFB0033220E /* Desu */ = {
+		EB9FF48919C4921000EB3548 /* Desu */ = {
 			isa = PBXGroup;
 			children = (
-				7BEEDE1119C3CCFB0033220E /* NFWAppDelegate.h */,
-				7BEEDE1219C3CCFB0033220E /* NFWAppDelegate.m */,
-				7BEEDE1419C3CCFB0033220E /* Main.storyboard */,
-				7BEEDE1719C3CCFB0033220E /* NFWViewController.h */,
-				7BEEDE1819C3CCFB0033220E /* NFWViewController.m */,
-				7BEEDE1A19C3CCFB0033220E /* Images.xcassets */,
-				7BEEDE0919C3CCFB0033220E /* Supporting Files */,
+				EB9FF49219C4921000EB3548 /* AppDelegate.h */,
+				EB9FF49319C4921000EB3548 /* AppDelegate.m */,
+				EB9FF49519C4921000EB3548 /* Images.xcassets */,
+				EB9FF48A19C4921000EB3548 /* Supporting Files */,
+				EB9FF4B219C492B300EB3548 /* Modulater.h */,
+				EB9FF4B319C492B300EB3548 /* Modulater.m */,
+				EB9FF4B519C4A2B400EB3548 /* Demodulater.h */,
+				EB9FF4B619C4A2B400EB3548 /* Demodulater.m */,
+				EB9FF4B819C4A57F00EB3548 /* Common.h */,
 			);
 			path = Desu;
 			sourceTree = "<group>";
 		};
-		7BEEDE0919C3CCFB0033220E /* Supporting Files */ = {
+		EB9FF48A19C4921000EB3548 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7BEEDE0A19C3CCFB0033220E /* Desu-Info.plist */,
-				7BEEDE0B19C3CCFB0033220E /* InfoPlist.strings */,
-				7BEEDE0E19C3CCFB0033220E /* main.m */,
-				7BEEDE1019C3CCFB0033220E /* Desu-Prefix.pch */,
+				EB9FF48B19C4921000EB3548 /* Desu-Info.plist */,
+				EB9FF48C19C4921000EB3548 /* InfoPlist.strings */,
+				EB9FF48F19C4921000EB3548 /* main.m */,
+				EB9FF49119C4921000EB3548 /* Desu-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7BEEDE2719C3CCFB0033220E /* DesuTests */ = {
+		EB9FF4A219C4921000EB3548 /* DesuTests */ = {
 			isa = PBXGroup;
 			children = (
-				7BEEDE2D19C3CCFB0033220E /* DesuTests.m */,
-				7BEEDE2819C3CCFB0033220E /* Supporting Files */,
+				EB9FF4A819C4921000EB3548 /* DesuTests.m */,
+				EB9FF4A319C4921000EB3548 /* Supporting Files */,
 			);
 			path = DesuTests;
 			sourceTree = "<group>";
 		};
-		7BEEDE2819C3CCFB0033220E /* Supporting Files */ = {
+		EB9FF4A319C4921000EB3548 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7BEEDE2919C3CCFB0033220E /* DesuTests-Info.plist */,
-				7BEEDE2A19C3CCFB0033220E /* InfoPlist.strings */,
+				EB9FF4A419C4921000EB3548 /* DesuTests-Info.plist */,
+				EB9FF4A519C4921000EB3548 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -155,13 +159,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7BEEDDFE19C3CCFB0033220E /* Desu */ = {
+		EB9FF47F19C4921000EB3548 /* Desu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7BEEDE3119C3CCFB0033220E /* Build configuration list for PBXNativeTarget "Desu" */;
+			buildConfigurationList = EB9FF4AC19C4921000EB3548 /* Build configuration list for PBXNativeTarget "Desu" */;
 			buildPhases = (
-				7BEEDDFB19C3CCFB0033220E /* Sources */,
-				7BEEDDFC19C3CCFB0033220E /* Frameworks */,
-				7BEEDDFD19C3CCFB0033220E /* Resources */,
+				EB9FF47C19C4921000EB3548 /* Sources */,
+				EB9FF47D19C4921000EB3548 /* Frameworks */,
+				EB9FF47E19C4921000EB3548 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -169,132 +173,122 @@
 			);
 			name = Desu;
 			productName = Desu;
-			productReference = 7BEEDDFF19C3CCFB0033220E /* Desu.app */;
+			productReference = EB9FF48019C4921000EB3548 /* Desu.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7BEEDE1F19C3CCFB0033220E /* DesuTests */ = {
+		EB9FF49A19C4921000EB3548 /* DesuTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7BEEDE3419C3CCFB0033220E /* Build configuration list for PBXNativeTarget "DesuTests" */;
+			buildConfigurationList = EB9FF4AF19C4921000EB3548 /* Build configuration list for PBXNativeTarget "DesuTests" */;
 			buildPhases = (
-				7BEEDE1C19C3CCFB0033220E /* Sources */,
-				7BEEDE1D19C3CCFB0033220E /* Frameworks */,
-				7BEEDE1E19C3CCFB0033220E /* Resources */,
+				EB9FF49719C4921000EB3548 /* Sources */,
+				EB9FF49819C4921000EB3548 /* Frameworks */,
+				EB9FF49919C4921000EB3548 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7BEEDE2619C3CCFB0033220E /* PBXTargetDependency */,
+				EB9FF4A119C4921000EB3548 /* PBXTargetDependency */,
 			);
 			name = DesuTests;
 			productName = DesuTests;
-			productReference = 7BEEDE2019C3CCFB0033220E /* DesuTests.xctest */;
+			productReference = EB9FF49B19C4921000EB3548 /* DesuTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7BEEDDF719C3CCFB0033220E /* Project object */ = {
+		EB9FF47819C4921000EB3548 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = NFW;
 				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = NAFWA;
+				ORGANIZATIONNAME = bwasti;
 				TargetAttributes = {
-					7BEEDE1F19C3CCFB0033220E = {
-						TestTargetID = 7BEEDDFE19C3CCFB0033220E;
+					EB9FF49A19C4921000EB3548 = {
+						TestTargetID = EB9FF47F19C4921000EB3548;
 					};
 				};
 			};
-			buildConfigurationList = 7BEEDDFA19C3CCFB0033220E /* Build configuration list for PBXProject "Desu" */;
+			buildConfigurationList = EB9FF47B19C4921000EB3548 /* Build configuration list for PBXProject "Desu" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
-			mainGroup = 7BEEDDF619C3CCFB0033220E;
-			productRefGroup = 7BEEDE0019C3CCFB0033220E /* Products */;
+			mainGroup = EB9FF47719C4921000EB3548;
+			productRefGroup = EB9FF48119C4921000EB3548 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7BEEDDFE19C3CCFB0033220E /* Desu */,
-				7BEEDE1F19C3CCFB0033220E /* DesuTests */,
+				EB9FF47F19C4921000EB3548 /* Desu */,
+				EB9FF49A19C4921000EB3548 /* DesuTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7BEEDDFD19C3CCFB0033220E /* Resources */ = {
+		EB9FF47E19C4921000EB3548 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BEEDE1B19C3CCFB0033220E /* Images.xcassets in Resources */,
-				7BEEDE0D19C3CCFB0033220E /* InfoPlist.strings in Resources */,
-				7BEEDE1619C3CCFB0033220E /* Main.storyboard in Resources */,
+				EB9FF48E19C4921000EB3548 /* InfoPlist.strings in Resources */,
+				EB9FF49619C4921000EB3548 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7BEEDE1E19C3CCFB0033220E /* Resources */ = {
+		EB9FF49919C4921000EB3548 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BEEDE2C19C3CCFB0033220E /* InfoPlist.strings in Resources */,
+				EB9FF4A719C4921000EB3548 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7BEEDDFB19C3CCFB0033220E /* Sources */ = {
+		EB9FF47C19C4921000EB3548 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BEEDE1319C3CCFB0033220E /* NFWAppDelegate.m in Sources */,
-				7BEEDE1919C3CCFB0033220E /* NFWViewController.m in Sources */,
-				7BEEDE0F19C3CCFB0033220E /* main.m in Sources */,
+				EB9FF49419C4921000EB3548 /* AppDelegate.m in Sources */,
+				EB9FF4B419C492B300EB3548 /* Modulater.m in Sources */,
+				EB9FF4B719C4A2B400EB3548 /* Demodulater.m in Sources */,
+				EB9FF49019C4921000EB3548 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7BEEDE1C19C3CCFB0033220E /* Sources */ = {
+		EB9FF49719C4921000EB3548 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BEEDE2E19C3CCFB0033220E /* DesuTests.m in Sources */,
+				EB9FF4A919C4921000EB3548 /* DesuTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7BEEDE2619C3CCFB0033220E /* PBXTargetDependency */ = {
+		EB9FF4A119C4921000EB3548 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7BEEDDFE19C3CCFB0033220E /* Desu */;
-			targetProxy = 7BEEDE2519C3CCFB0033220E /* PBXContainerItemProxy */;
+			target = EB9FF47F19C4921000EB3548 /* Desu */;
+			targetProxy = EB9FF4A019C4921000EB3548 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7BEEDE0B19C3CCFB0033220E /* InfoPlist.strings */ = {
+		EB9FF48C19C4921000EB3548 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7BEEDE0C19C3CCFB0033220E /* en */,
+				EB9FF48D19C4921000EB3548 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		7BEEDE1419C3CCFB0033220E /* Main.storyboard */ = {
+		EB9FF4A519C4921000EB3548 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7BEEDE1519C3CCFB0033220E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7BEEDE2A19C3CCFB0033220E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7BEEDE2B19C3CCFB0033220E /* en */,
+				EB9FF4A619C4921000EB3548 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -302,7 +296,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		7BEEDE2F19C3CCFB0033220E /* Debug */ = {
+		EB9FF4AA19C4921000EB3548 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -340,7 +334,7 @@
 			};
 			name = Debug;
 		};
-		7BEEDE3019C3CCFB0033220E /* Release */ = {
+		EB9FF4AB19C4921000EB3548 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -372,7 +366,7 @@
 			};
 			name = Release;
 		};
-		7BEEDE3219C3CCFB0033220E /* Debug */ = {
+		EB9FF4AD19C4921000EB3548 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -385,7 +379,7 @@
 			};
 			name = Debug;
 		};
-		7BEEDE3319C3CCFB0033220E /* Release */ = {
+		EB9FF4AE19C4921000EB3548 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -398,7 +392,7 @@
 			};
 			name = Release;
 		};
-		7BEEDE3519C3CCFB0033220E /* Debug */ = {
+		EB9FF4B019C4921000EB3548 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Desu.app/Desu";
@@ -420,7 +414,7 @@
 			};
 			name = Debug;
 		};
-		7BEEDE3619C3CCFB0033220E /* Release */ = {
+		EB9FF4B119C4921000EB3548 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Desu.app/Desu";
@@ -441,32 +435,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7BEEDDFA19C3CCFB0033220E /* Build configuration list for PBXProject "Desu" */ = {
+		EB9FF47B19C4921000EB3548 /* Build configuration list for PBXProject "Desu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7BEEDE2F19C3CCFB0033220E /* Debug */,
-				7BEEDE3019C3CCFB0033220E /* Release */,
+				EB9FF4AA19C4921000EB3548 /* Debug */,
+				EB9FF4AB19C4921000EB3548 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7BEEDE3119C3CCFB0033220E /* Build configuration list for PBXNativeTarget "Desu" */ = {
+		EB9FF4AC19C4921000EB3548 /* Build configuration list for PBXNativeTarget "Desu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7BEEDE3219C3CCFB0033220E /* Debug */,
-				7BEEDE3319C3CCFB0033220E /* Release */,
+				EB9FF4AD19C4921000EB3548 /* Debug */,
+				EB9FF4AE19C4921000EB3548 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		7BEEDE3419C3CCFB0033220E /* Build configuration list for PBXNativeTarget "DesuTests" */ = {
+		EB9FF4AF19C4921000EB3548 /* Build configuration list for PBXNativeTarget "DesuTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7BEEDE3519C3CCFB0033220E /* Debug */,
-				7BEEDE3619C3CCFB0033220E /* Release */,
+				EB9FF4B019C4921000EB3548 /* Debug */,
+				EB9FF4B119C4921000EB3548 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7BEEDDF719C3CCFB0033220E /* Project object */;
+	rootObject = EB9FF47819C4921000EB3548 /* Project object */;
 }

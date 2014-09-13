@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7BEEDDFE19C3CCFB0033220E"
+               BlueprintIdentifier = "EB9FF47F19C4921000EB3548"
                BuildableName = "Desu.app"
                BlueprintName = "Desu"
                ReferencedContainer = "container:Desu.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7BEEDE1F19C3CCFB0033220E"
+               BlueprintIdentifier = "EB9FF49A19C4921000EB3548"
                BuildableName = "DesuTests.xctest"
                BlueprintName = "DesuTests"
                ReferencedContainer = "container:Desu.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7BEEDDFE19C3CCFB0033220E"
+            BlueprintIdentifier = "EB9FF47F19C4921000EB3548"
             BuildableName = "Desu.app"
             BlueprintName = "Desu"
             ReferencedContainer = "container:Desu.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7BEEDDFE19C3CCFB0033220E"
+            BlueprintIdentifier = "EB9FF47F19C4921000EB3548"
             BuildableName = "Desu.app"
             BlueprintName = "Desu"
             ReferencedContainer = "container:Desu.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7BEEDDFE19C3CCFB0033220E"
+            BlueprintIdentifier = "EB9FF47F19C4921000EB3548"
             BuildableName = "Desu.app"
             BlueprintName = "Desu"
             ReferencedContainer = "container:Desu.xcodeproj">

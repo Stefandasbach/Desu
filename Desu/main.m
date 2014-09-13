@@ -2,17 +2,17 @@
 //  main.m
 //  Desu
 //
-//  Created by Stefan Dasbach on 9/12/14.
-//  Copyright (c) 2014 NAFWA. All rights reserved.
+//  Created by Bram Wasti on 9/13/14.
+//  Copyright (c) 2014 bwasti. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-#import "NFWAppDelegate.h"
+#import "AppDelegate.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([NFWAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }
