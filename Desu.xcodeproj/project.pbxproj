@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B62C35419C4D0040082DEFF /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B62C35319C4D0040082DEFF /* Storyboard.storyboard */; };
+		7B62C35719C4D2960082DEFF /* DesuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B62C35619C4D2960082DEFF /* DesuViewController.m */; };
 		EB9FF48419C4921000EB3548 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9FF48319C4921000EB3548 /* Foundation.framework */; };
 		EB9FF48619C4921000EB3548 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9FF48519C4921000EB3548 /* CoreGraphics.framework */; };
 		EB9FF48819C4921000EB3548 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9FF48719C4921000EB3548 /* UIKit.framework */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B62C35319C4D0040082DEFF /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		7B62C35519C4D2960082DEFF /* DesuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesuViewController.h; sourceTree = "<group>"; };
+		7B62C35619C4D2960082DEFF /* DesuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesuViewController.m; sourceTree = "<group>"; };
 		EB9FF48019C4921000EB3548 /* Desu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Desu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9FF48319C4921000EB3548 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EB9FF48519C4921000EB3548 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -123,6 +128,9 @@
 				EB9FF4B519C4A2B400EB3548 /* Demodulater.h */,
 				EB9FF4B619C4A2B400EB3548 /* Demodulater.m */,
 				EB9FF4B819C4A57F00EB3548 /* Common.h */,
+				7B62C35319C4D0040082DEFF /* Storyboard.storyboard */,
+				7B62C35519C4D2960082DEFF /* DesuViewController.h */,
+				7B62C35619C4D2960082DEFF /* DesuViewController.m */,
 			);
 			path = Desu;
 			sourceTree = "<group>";
@@ -233,6 +241,7 @@
 			files = (
 				EB9FF48E19C4921000EB3548 /* InfoPlist.strings in Resources */,
 				EB9FF49619C4921000EB3548 /* Images.xcassets in Resources */,
+				7B62C35419C4D0040082DEFF /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +262,7 @@
 			files = (
 				EB9FF49419C4921000EB3548 /* AppDelegate.m in Sources */,
 				EB9FF4B419C492B300EB3548 /* Modulater.m in Sources */,
+				7B62C35719C4D2960082DEFF /* DesuViewController.m in Sources */,
 				EB9FF4B719C4A2B400EB3548 /* Demodulater.m in Sources */,
 				EB9FF49019C4921000EB3548 /* main.m in Sources */,
 			);

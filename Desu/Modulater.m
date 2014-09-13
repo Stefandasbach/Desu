@@ -141,5 +141,10 @@ void bufferPopulater(void * inUserData,
     return;
 }
 
+-(void) pause {
+    AudioQueueReset(_playstate.queue);
+    AudioQueueStop(_playstate.queue, YES);
+    AudioQueueDispose (_playstate.queue, YES);
+}
 
 @end

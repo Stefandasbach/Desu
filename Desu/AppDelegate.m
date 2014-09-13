@@ -13,19 +13,23 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    UIViewController *desuViewController=[[UIStoryboard storyboardWithName:@"Storyboard" bundle:nil] instantiateViewControllerWithIdentifier:@"DesuViewController"];
+    UINavigationController *navController=[[UINavigationController alloc]initWithRootViewController:desuViewController];
+    self.window.rootViewController=navController;
+    
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
     // uncomment below to play
-    /*_modulator = [Modulater new];
-    [_modulator initializeAudio];
-    [_modulator play];*/
+//    _modulastor = [Modulater new];
+//    [_modulator initializeAudio];
+//    [_modulator play];
     
     // comment below out to play
-    _listener = [Demodulater new];
-    [_listener initializeListener];
-    [_listener listen];
+//    _listener = [Demodulater new];
+//    [_listener initializeListener];
+//    [_listener listen];
     
     return YES;
 }
