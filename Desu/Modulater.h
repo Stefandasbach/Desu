@@ -16,9 +16,10 @@
 typedef struct {
     AudioStreamBasicDescription format;
     AudioQueueRef queue;
-    AudioQueueBufferRef mBuffers[3];
+    AudioQueueBufferRef mBuffers[1];
     SInt64 currentPacket;
-    unsigned long message[MESSAGE_LEN];
+    long currIndex;
+    long message[MESSAGE_LEN];
 
 } PlayerState;
 
