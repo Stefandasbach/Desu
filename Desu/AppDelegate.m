@@ -16,9 +16,17 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    _modulator = [Modulater new];
+    
+    // uncomment below to play
+    /*_modulator = [Modulater new];
     [_modulator initializeAudio];
-    [_modulator play];
+    [_modulator play];*/
+    
+    // comment below out to play
+    _listener = [Demodulater new];
+    [_listener initializeListener];
+    [_listener listen];
+    
     return YES;
 }
 

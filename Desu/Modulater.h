@@ -18,7 +18,7 @@ typedef struct {
     AudioQueueRef queue;
     AudioQueueBufferRef mBuffers[3];
     SInt64 currentPacket;
-    char message[MESSAGE_LEN];
+    unsigned long message[MESSAGE_LEN];
 
 } PlayerState;
 

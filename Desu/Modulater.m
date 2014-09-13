@@ -84,8 +84,8 @@ void bufferPopulater(void * inUserData,
 
 	for(long i = 0; i < numPackets; i++) {
         long long idx = pPlayState->currentPacket++;
-        //short encoding =  pPlayState->message[idx%MESSAGE_LEN];
-		buffer[i] = (SInt16) (sin(2 * M_PI * FREQ * idx / SR) * SHRT_MAX);
+        unsigned long freq =  pPlayState->message[idx%MESSAGE_LEN];
+		buffer[i] = (SInt16) (sin(2 * M_PI * freq * idx / SR) * SHRT_MAX);
 	}
 
     // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -105,8 +105,11 @@ void bufferPopulater(void * inUserData,
     _playstate.format.mBytesPerFrame = _playstate.format.mBytesPerPacket = _playstate.format.mChannelsPerFrame * sizeof(SInt16);
     _playstate.format.mReserved = 0;
     _playstate.format.mFormatFlags = kLinearPCMFormatFlagIsNonInterleaved | kLinearPCMFormatFlagIsSignedInteger | kLinearPCMFormatFlagIsPacked ;//| kLinearPCMFormatFlagIsBigEndian;
-    _playstate.message[0] = '1';
-    _playstate.message[0] = '2';
+    
+    int i;
+    for (i = 0; i < 8; ++i){
+        _playstate.message[i] = i % 2 ? HI_FREQ : LOW_FREQ;
+    }
     return;
 }
 

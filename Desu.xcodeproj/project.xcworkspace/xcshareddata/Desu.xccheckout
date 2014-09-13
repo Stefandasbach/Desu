@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EDC1E425-8FF2-4EA0-B6E5-DE8CF2711770</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Desu</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>83B626D8-11DA-49E9-8300-5E1E0BBDDACC</key>
+		<string>ssh://github.com/Stefandasbach/Desu.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Desu.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>83B626D8-11DA-49E9-8300-5E1E0BBDDACC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/Stefandasbach/Desu.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>83B626D8-11DA-49E9-8300-5E1E0BBDDACC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>83B626D8-11DA-49E9-8300-5E1E0BBDDACC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Desu</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -22,4 +22,8 @@ typedef struct {
 } ListenerState;
 
 @property (nonatomic, assign) ListenerState listener;
+
+-(void)initializeListener;
+-(void)listen;
+
 @end

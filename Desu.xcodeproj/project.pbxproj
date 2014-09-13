@@ -451,6 +451,7 @@
 				EB9FF4AE19C4921000EB3548 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB9FF4AF19C4921000EB3548 /* Build configuration list for PBXNativeTarget "DesuTests" */ = {
 			isa = XCConfigurationList;
@@ -459,6 +460,7 @@
 				EB9FF4B119C4921000EB3548 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
