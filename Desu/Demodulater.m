@@ -44,12 +44,17 @@ float goertzel_mag(int numSamples,int TARGET_FREQUENCY,int SAMPLING_RATE, float*
     return magnitude;
 }
 
-bool determineSpike(unsigned long freq, long numSamples, float* buffer, long sweep, float cutoff) {
+int determineSpike(long numSamples, float* buffer,
+                    long sweep, unsigned long high,  unsigned long mid,  unsigned long low,
+                    float cutoff) {
     unsigned long i;
-    float *mag = calloc(sweep, sizeof(float));
-    for (i = 0; i < sweep; ++i) {
-        mag[i] = goertzel_mag(numSamples, freq + i*10 - sweep/2, SR, buffer);
-        NSLog(@"[%lu] %f", i, mag[i]);
+    unsigned long spacing = (high - low) / 4;
+    unsigned long totalRangeBy10 = spacing * 6 / 10;
+    
+    float *mag = calloc(totalRangeBy10, sizeof(float));
+    for (i = 0; i < totalRangeBy10; ++i) {
+        mag[i] = goertzel_mag(numSamples, low - spacing + i * 10, SR, buffer);
+        //NSLog(@"[%lu] %f", i, mag[i]);
     }
     
     long maxFreq = 0;
@@ -59,20 +64,26 @@ bool determineSpike(unsigned long freq, long numSamples, float* buffer, long swe
     for (i = 0; i < sweep; ++i) {
         totalMag += mag[i];
         if (mag[i] > maxMag) {
-            maxFreq = i*10 + freq - sweep/2;
+            maxFreq = low - spacing + i * 10;
             maxMag = mag[i];
         }
     }
     
-    float averageMag = totalMag / sweep;
+    //NSLog(@"total mag: %f", totalMag);
     
-    NSLog(@"max freq is %lu at %f, avg is %f", maxFreq, maxMag, averageMag);
-    if ((abs(maxFreq - freq) < 40) && (maxFreq > cutoff * averageMag)) {
-        return YES;
-    } else {
-        return NO;
+    float averageMag = totalMag / totalRangeBy10;
+    
+    //NSLog(@"max freq is %lu at %f, avg is %f", maxFreq, maxMag, averageMag);
+    if (maxMag > cutoff * averageMag) {
+        if (abs(maxFreq-low) < 40) return 0;
+        if (abs(maxFreq-mid) < 40) return 1;
+        if (abs(maxFreq-high) < 40) return 2;
     }
+    return -1;
 }
+
+#define CLEAN 5
+static int last[CLEAN] = {-1, -1, -1};
 
 void bufferDecoder(void * inUserData,
                        AudioQueueRef inAQ,
@@ -86,16 +97,61 @@ void bufferDecoder(void * inUserData,
 
     ListenerState *listener = (ListenerState *)inUserData;
     long numSamples = inBuffer->mAudioDataByteSize / listener->format.mBytesPerPacket - 1;
-    short *samples = inBuffer->mAudioData;
-    for (long i = 0; i < numSamples; i++) {
-        listener->fBuffer[i] = samples[i] / (float)SHRT_MAX;
-    }
     
-    if (determineSpike(HI_FREQ, numSamples, listener->fBuffer, 100, 2.0)) {
-        NSLog(@"1");
-    } else if (determineSpike(LOW_FREQ, numSamples, listener->fBuffer, 100, 2.0)){
-        NSLog(@"0");
+    int sample_base = 0;
+    short *samples = inBuffer->mAudioData;
+    
+    int vals[numSamples/SAMPLES_PER_READ];
+    
+    int clean = 0;
+    
+    while (sample_base + SAMPLES_PER_READ < numSamples) {
+        for (long i = 0; i < SAMPLES_PER_READ; i++) {
+            listener->fBuffer[i] = samples[i + sample_base] / (float)SHRT_MAX;
+        }
+        
+        int res = determineSpike(SAMPLES_PER_READ, listener->fBuffer, 50, HI_FREQ, MED_FREQ, LOW_FREQ, 2.0);
+        //NSLog(@"%d", res);
+        vals[sample_base / SAMPLES_PER_READ] = res;
+        
+        for (int i = 0; i < CLEAN - 1; i ++) {
+            last[i] = last[i+1];
+        }
+        last[CLEAN - 1] = res;
+        
+        int nums[3] = {0, 0, 0};
+        
+        for (int i = 0; i < CLEAN; i ++) {
+            if (last[i] != -1) {
+                nums[last[i]] ++;
+            }
+        }
+        for (int i = 0; i < 3; i++) {
+            if (nums[i] > CLEAN / 2 + 1) {
+                switch(i) {
+                    case 0:
+                    case 1:
+                        if (clean) {
+                            NSLog(@"%d", i);
+                            clean = 0;
+                        }
+                        break;
+                    case 2:
+                        clean = 1;
+                        break;
+                    default:
+                        NSLog(@"Whatasldkfjklsdjf");
+                }
+            }
+        }
+
+        
+        sample_base += SAMPLES_PER_READ;
     }
+   
+    
+    
+
 
     AudioQueueEnqueueBuffer(listener->queue, inBuffer, 0, NULL);
 
@@ -112,7 +168,7 @@ void bufferDecoder(void * inUserData,
     _listener.format.mBytesPerFrame = _listener.format.mBytesPerPacket = _listener.format.mChannelsPerFrame * sizeof(SInt16);
     _listener.format.mReserved = 0;
     _listener.format.mFormatFlags = kLinearPCMFormatFlagIsNonInterleaved | kLinearPCMFormatFlagIsSignedInteger | kLinearPCMFormatFlagIsPacked ;//|
-    _listener.fBuffer = calloc(SR, sizeof(float));
+    _listener.fBuffer = calloc(SAMPLES_PER_READ, sizeof(float));
 }
 
 -(void)listen {
