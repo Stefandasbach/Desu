@@ -193,4 +193,10 @@ void bufferDecoder(void * inUserData,
     }
 }
 
+-(void)pause {
+    AudioQueueReset(_listener.queue);
+    AudioQueueStop(_listener.queue, YES);
+    AudioQueueDispose (_listener.queue, YES);
+}
+
 @end

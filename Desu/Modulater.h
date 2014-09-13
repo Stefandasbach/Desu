@@ -26,5 +26,6 @@ typedef struct {
 @property (nonatomic, assign) PlayerState playstate;
 
 - (void)play;
+- (void)pause;
 - (void)initializeAudio;
 @end

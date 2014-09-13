@@ -25,5 +25,6 @@ typedef struct {
 
 -(void)initializeListener;
 -(void)listen;
+-(void)pause;
 
 @end
