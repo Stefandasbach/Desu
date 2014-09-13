@@ -10,8 +10,13 @@
 #define Desu_Common_h
 
 
+<<<<<<< HEAD
 #define MESSAGE_LEN 8
 #define FREQ    19500
+=======
+#define MESSAGE_LEN 2
+#define FREQ    20500
+>>>>>>> e4e5f1166baafdd70afd0d4a9ebbfb8fc2012994
 #define SR      44100
 #define BUFFER_SIZE 88200
 #define BARKER_LEN  13
