@@ -11,7 +11,7 @@
 
 
 #define MESSAGE_LEN 2
-#define FREQ    19500
+#define FREQ    20500
 #define SR      44100
 #define BUFFER_SIZE 88200
 #define BARKER_LEN  13
