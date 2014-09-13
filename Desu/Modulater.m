@@ -84,12 +84,13 @@ void bufferPopulater(void * inUserData,
 
 	for(long i = 0; i < numPackets; i++) {
         long long idx = pPlayState->currentPacket++;
-        unsigned long freq =  pPlayState->message[idx%MESSAGE_LEN];
+        unsigned long freq = pPlayState->message[pPlayState->currIndex % MESSAGE_LEN];
 		buffer[i] = (SInt16) (sin(2 * M_PI * freq * idx / SR) * SHRT_MAX);
 	}
-
+    
+    NSLog(@"%lu", pPlayState->message[pPlayState->currIndex % MESSAGE_LEN]);
     // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+    pPlayState->currIndex++;
     inBuffer->mAudioDataByteSize = numPackets * 2;
     AudioQueueEnqueueBuffer(pPlayState->queue, inBuffer, 0, NULL);
     return;
@@ -107,9 +108,10 @@ void bufferPopulater(void * inUserData,
     _playstate.format.mFormatFlags = kLinearPCMFormatFlagIsNonInterleaved | kLinearPCMFormatFlagIsSignedInteger | kLinearPCMFormatFlagIsPacked ;//| kLinearPCMFormatFlagIsBigEndian;
     
     int i;
-    for (i = 0; i < 8; ++i){
+    for (i = 0; i < MESSAGE_LEN; ++i){
         _playstate.message[i] = i % 2 ? HI_FREQ : LOW_FREQ;
     }
+    _playstate.currIndex = 0;
     return;
 }
 

@@ -18,14 +18,14 @@
     [self.window makeKeyAndVisible];
     
     // uncomment below to play
-    /*_modulator = [Modulater new];
+    _modulator = [Modulater new];
     [_modulator initializeAudio];
-    [_modulator play];*/
+    [_modulator play];
     
     // comment below out to play
-    _listener = [Demodulater new];
-    [_listener initializeListener];
-    [_listener listen];
+//    _listener = [Demodulater new];
+//    [_listener initializeListener];
+//    [_listener listen];
     
     return YES;
 }
