@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7BEEDE0319C3CCFB0033220E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEEDE0219C3CCFB0033220E /* Foundation.framework */; };
+		7BEEDE0519C3CCFB0033220E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEEDE0419C3CCFB0033220E /* CoreGraphics.framework */; };
+		7BEEDE0719C3CCFB0033220E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEEDE0619C3CCFB0033220E /* UIKit.framework */; };
+		7BEEDE0D19C3CCFB0033220E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BEEDE0B19C3CCFB0033220E /* InfoPlist.strings */; };
+		7BEEDE0F19C3CCFB0033220E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEEDE0E19C3CCFB0033220E /* main.m */; };
+		7BEEDE1319C3CCFB0033220E /* NFWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEEDE1219C3CCFB0033220E /* NFWAppDelegate.m */; };
+		7BEEDE1619C3CCFB0033220E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BEEDE1419C3CCFB0033220E /* Main.storyboard */; };
+		7BEEDE1919C3CCFB0033220E /* NFWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEEDE1819C3CCFB0033220E /* NFWViewController.m */; };
+		7BEEDE1B19C3CCFB0033220E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BEEDE1A19C3CCFB0033220E /* Images.xcassets */; };
+		7BEEDE2219C3CCFB0033220E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEEDE2119C3CCFB0033220E /* XCTest.framework */; };
+		7BEEDE2319C3CCFB0033220E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEEDE0219C3CCFB0033220E /* Foundation.framework */; };
+		7BEEDE2419C3CCFB0033220E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEEDE0619C3CCFB0033220E /* UIKit.framework */; };
+		7BEEDE2C19C3CCFB0033220E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BEEDE2A19C3CCFB0033220E /* InfoPlist.strings */; };
+		7BEEDE2E19C3CCFB0033220E /* DesuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEEDE2D19C3CCFB0033220E /* DesuTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7BEEDE2519C3CCFB0033220E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BEEDDF719C3CCFB0033220E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BEEDDFE19C3CCFB0033220E;
+			remoteInfo = Desu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7BEEDDFF19C3CCFB0033220E /* Desu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Desu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BEEDE0219C3CCFB0033220E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7BEEDE0419C3CCFB0033220E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7BEEDE0619C3CCFB0033220E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7BEEDE0A19C3CCFB0033220E /* Desu-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Desu-Info.plist"; sourceTree = "<group>"; };
+		7BEEDE0C19C3CCFB0033220E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7BEEDE0E19C3CCFB0033220E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7BEEDE1019C3CCFB0033220E /* Desu-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Desu-Prefix.pch"; sourceTree = "<group>"; };
+		7BEEDE1119C3CCFB0033220E /* NFWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NFWAppDelegate.h; sourceTree = "<group>"; };
+		7BEEDE1219C3CCFB0033220E /* NFWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NFWAppDelegate.m; sourceTree = "<group>"; };
+		7BEEDE1519C3CCFB0033220E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7BEEDE1719C3CCFB0033220E /* NFWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NFWViewController.h; sourceTree = "<group>"; };
+		7BEEDE1819C3CCFB0033220E /* NFWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NFWViewController.m; sourceTree = "<group>"; };
+		7BEEDE1A19C3CCFB0033220E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7BEEDE2019C3CCFB0033220E /* DesuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BEEDE2119C3CCFB0033220E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7BEEDE2919C3CCFB0033220E /* DesuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DesuTests-Info.plist"; sourceTree = "<group>"; };
+		7BEEDE2B19C3CCFB0033220E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7BEEDE2D19C3CCFB0033220E /* DesuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesuTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BEEDDFC19C3CCFB0033220E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BEEDE0519C3CCFB0033220E /* CoreGraphics.framework in Frameworks */,
+				7BEEDE0719C3CCFB0033220E /* UIKit.framework in Frameworks */,
+				7BEEDE0319C3CCFB0033220E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BEEDE1D19C3CCFB0033220E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BEEDE2219C3CCFB0033220E /* XCTest.framework in Frameworks */,
+				7BEEDE2419C3CCFB0033220E /* UIKit.framework in Frameworks */,
+				7BEEDE2319C3CCFB0033220E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7BEEDDF619C3CCFB0033220E = {
+			isa = PBXGroup;
+			children = (
+				7BEEDE0819C3CCFB0033220E /* Desu */,
+				7BEEDE2719C3CCFB0033220E /* DesuTests */,
+				7BEEDE0119C3CCFB0033220E /* Frameworks */,
+				7BEEDE0019C3CCFB0033220E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7BEEDE0019C3CCFB0033220E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BEEDDFF19C3CCFB0033220E /* Desu.app */,
+				7BEEDE2019C3CCFB0033220E /* DesuTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BEEDE0119C3CCFB0033220E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BEEDE0219C3CCFB0033220E /* Foundation.framework */,
+				7BEEDE0419C3CCFB0033220E /* CoreGraphics.framework */,
+				7BEEDE0619C3CCFB0033220E /* UIKit.framework */,
+				7BEEDE2119C3CCFB0033220E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BEEDE0819C3CCFB0033220E /* Desu */ = {
+			isa = PBXGroup;
+			children = (
+				7BEEDE1119C3CCFB0033220E /* NFWAppDelegate.h */,
+				7BEEDE1219C3CCFB0033220E /* NFWAppDelegate.m */,
+				7BEEDE1419C3CCFB0033220E /* Main.storyboard */,
+				7BEEDE1719C3CCFB0033220E /* NFWViewController.h */,
+				7BEEDE1819C3CCFB0033220E /* NFWViewController.m */,
+				7BEEDE1A19C3CCFB0033220E /* Images.xcassets */,
+				7BEEDE0919C3CCFB0033220E /* Supporting Files */,
+			);
+			path = Desu;
+			sourceTree = "<group>";
+		};
+		7BEEDE0919C3CCFB0033220E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BEEDE0A19C3CCFB0033220E /* Desu-Info.plist */,
+				7BEEDE0B19C3CCFB0033220E /* InfoPlist.strings */,
+				7BEEDE0E19C3CCFB0033220E /* main.m */,
+				7BEEDE1019C3CCFB0033220E /* Desu-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7BEEDE2719C3CCFB0033220E /* DesuTests */ = {
+			isa = PBXGroup;
+			children = (
+				7BEEDE2D19C3CCFB0033220E /* DesuTests.m */,
+				7BEEDE2819C3CCFB0033220E /* Supporting Files */,
+			);
+			path = DesuTests;
+			sourceTree = "<group>";
+		};
+		7BEEDE2819C3CCFB0033220E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BEEDE2919C3CCFB0033220E /* DesuTests-Info.plist */,
+				7BEEDE2A19C3CCFB0033220E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BEEDDFE19C3CCFB0033220E /* Desu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BEEDE3119C3CCFB0033220E /* Build configuration list for PBXNativeTarget "Desu" */;
+			buildPhases = (
+				7BEEDDFB19C3CCFB0033220E /* Sources */,
+				7BEEDDFC19C3CCFB0033220E /* Frameworks */,
+				7BEEDDFD19C3CCFB0033220E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Desu;
+			productName = Desu;
+			productReference = 7BEEDDFF19C3CCFB0033220E /* Desu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7BEEDE1F19C3CCFB0033220E /* DesuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BEEDE3419C3CCFB0033220E /* Build configuration list for PBXNativeTarget "DesuTests" */;
+			buildPhases = (
+				7BEEDE1C19C3CCFB0033220E /* Sources */,
+				7BEEDE1D19C3CCFB0033220E /* Frameworks */,
+				7BEEDE1E19C3CCFB0033220E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BEEDE2619C3CCFB0033220E /* PBXTargetDependency */,
+			);
+			name = DesuTests;
+			productName = DesuTests;
+			productReference = 7BEEDE2019C3CCFB0033220E /* DesuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BEEDDF719C3CCFB0033220E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NFW;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = NAFWA;
+				TargetAttributes = {
+					7BEEDE1F19C3CCFB0033220E = {
+						TestTargetID = 7BEEDDFE19C3CCFB0033220E;
+					};
+				};
+			};
+			buildConfigurationList = 7BEEDDFA19C3CCFB0033220E /* Build configuration list for PBXProject "Desu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7BEEDDF619C3CCFB0033220E;
+			productRefGroup = 7BEEDE0019C3CCFB0033220E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BEEDDFE19C3CCFB0033220E /* Desu */,
+				7BEEDE1F19C3CCFB0033220E /* DesuTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BEEDDFD19C3CCFB0033220E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BEEDE1B19C3CCFB0033220E /* Images.xcassets in Resources */,
+				7BEEDE0D19C3CCFB0033220E /* InfoPlist.strings in Resources */,
+				7BEEDE1619C3CCFB0033220E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BEEDE1E19C3CCFB0033220E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BEEDE2C19C3CCFB0033220E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BEEDDFB19C3CCFB0033220E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BEEDE1319C3CCFB0033220E /* NFWAppDelegate.m in Sources */,
+				7BEEDE1919C3CCFB0033220E /* NFWViewController.m in Sources */,
+				7BEEDE0F19C3CCFB0033220E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BEEDE1C19C3CCFB0033220E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BEEDE2E19C3CCFB0033220E /* DesuTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7BEEDE2619C3CCFB0033220E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BEEDDFE19C3CCFB0033220E /* Desu */;
+			targetProxy = 7BEEDE2519C3CCFB0033220E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7BEEDE0B19C3CCFB0033220E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BEEDE0C19C3CCFB0033220E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7BEEDE1419C3CCFB0033220E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BEEDE1519C3CCFB0033220E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7BEEDE2A19C3CCFB0033220E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BEEDE2B19C3CCFB0033220E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7BEEDE2F19C3CCFB0033220E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7BEEDE3019C3CCFB0033220E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BEEDE3219C3CCFB0033220E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Desu/Desu-Prefix.pch";
+				INFOPLIST_FILE = "Desu/Desu-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7BEEDE3319C3CCFB0033220E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Desu/Desu-Prefix.pch";
+				INFOPLIST_FILE = "Desu/Desu-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7BEEDE3519C3CCFB0033220E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Desu.app/Desu";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Desu/Desu-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DesuTests/DesuTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7BEEDE3619C3CCFB0033220E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Desu.app/Desu";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Desu/Desu-Prefix.pch";
+				INFOPLIST_FILE = "DesuTests/DesuTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BEEDDFA19C3CCFB0033220E /* Build configuration list for PBXProject "Desu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BEEDE2F19C3CCFB0033220E /* Debug */,
+				7BEEDE3019C3CCFB0033220E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BEEDE3119C3CCFB0033220E /* Build configuration list for PBXNativeTarget "Desu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BEEDE3219C3CCFB0033220E /* Debug */,
+				7BEEDE3319C3CCFB0033220E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7BEEDE3419C3CCFB0033220E /* Build configuration list for PBXNativeTarget "DesuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BEEDE3519C3CCFB0033220E /* Debug */,
+				7BEEDE3619C3CCFB0033220E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7BEEDDF719C3CCFB0033220E /* Project object */;
+}
