@@ -56,7 +56,7 @@
     if (!_modulator) {
         _modulator = [Modulater new];
         [_modulator initializeAudio];
-        [_modulator playBeeps:HI_FREQ];
+        [_modulator play];
     }
 }
 
@@ -68,8 +68,10 @@
     }
     if (!_listener) {
         _listener = [Demodulater new];
+        [_listener setLabelHigh:_highLabel AndLow:_lowLabel];
         [_listener initializeListener];
         [_listener listen];
     }
+    
 }
 @end

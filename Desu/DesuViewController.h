@@ -13,6 +13,8 @@
 @interface DesuViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIButton *ListenButton;
 @property (strong, nonatomic) IBOutlet UIButton *PlayButton;
+@property (weak, nonatomic) IBOutlet UILabel *highLabel;
+@property (weak, nonatomic) IBOutlet UILabel *lowLabel;
 
 @property (strong, nonatomic) Modulater *modulator;
 @property (strong, nonatomic) Demodulater *listener;

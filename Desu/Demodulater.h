@@ -21,10 +21,15 @@ typedef struct {
     float *fBuffer;
 } ListenerState;
 
+@property (weak, nonatomic) IBOutlet UILabel *highLabel;
+@property (weak, nonatomic) IBOutlet UILabel *lowLabel;
+
 @property (nonatomic, assign) ListenerState listener;
 
 -(void)initializeListener;
 -(void)listen;
 -(void)pause;
+-(void)setLabelHigh:(UILabel *)highLabel AndLow:(UILabel *)lowLabel;
+-(void) labelUpdater:(float *)buffer;
 
 @end

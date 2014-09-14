@@ -9,6 +9,7 @@
 #import "Demodulater.h"
 
 @implementation Demodulater
+id this;
 
 float goertzel_mag(int numSamples,int TARGET_FREQUENCY,int SAMPLING_RATE, float* data)
 {
@@ -85,6 +86,20 @@ int determineSpike(long numSamples, float* buffer,
 #define CLEAN 5
 static int last[CLEAN] = {-1, -1, -1};
 
+-(void) labelUpdater{
+    float hi_mag = goertzel_mag(SAMPLES_PER_READ, HI_FREQ, SR, _listener.fBuffer);
+    float low_mag = goertzel_mag(SAMPLES_PER_READ, LOW_FREQ, SR, _listener.fBuffer);
+    [_highLabel setText:[NSString stringWithFormat:@"%f",hi_mag]];
+    [_lowLabel setText:[NSString stringWithFormat:@"%f",low_mag]];
+    NSLog(@"\nHI:%f\nLOW:%f",hi_mag, low_mag);
+    //
+}
+
+-(void)setLabelHigh:(UILabel *)highLabel AndLow:(UILabel *)lowLabel {
+    _lowLabel = lowLabel;
+    _highLabel = highLabel;
+}
+
 void bufferDecoder(void * inUserData,
                        AudioQueueRef inAQ,
                        AudioQueueBufferRef inBuffer,
@@ -110,6 +125,9 @@ void bufferDecoder(void * inUserData,
             listener->fBuffer[i] = samples[i + sample_base] / (float)SHRT_MAX;
         }
         
+        [this labelUpdater];
+        
+        /*
         int res = determineSpike(SAMPLES_PER_READ, listener->fBuffer, 50, HI_FREQ, MED_FREQ, LOW_FREQ, 2.0);
         //NSLog(@"%d", res);
         vals[sample_base / SAMPLES_PER_READ] = res;
@@ -145,7 +163,7 @@ void bufferDecoder(void * inUserData,
             }
         }
 
-        
+        */
         sample_base += SAMPLES_PER_READ;
     }
    
@@ -159,6 +177,7 @@ void bufferDecoder(void * inUserData,
 }
 
 -(void)initializeListener {
+    this = self;
     NSLog(@"Initiliazing listener");
     _listener.format.mFormatID = kAudioFormatLinearPCM;
     _listener.format.mSampleRate = 44100.0f;
@@ -169,6 +188,8 @@ void bufferDecoder(void * inUserData,
     _listener.format.mReserved = 0;
     _listener.format.mFormatFlags = kLinearPCMFormatFlagIsNonInterleaved | kLinearPCMFormatFlagIsSignedInteger | kLinearPCMFormatFlagIsPacked ;//|
     _listener.fBuffer = calloc(SAMPLES_PER_READ, sizeof(float));
+        [_highLabel setText:[NSString stringWithFormat:@"%f",0.2]];
+    [_lowLabel setText:[NSString stringWithFormat:@"%f",0.123]];
 }
 
 -(void)listen {
