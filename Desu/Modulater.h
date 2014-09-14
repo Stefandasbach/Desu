@@ -19,6 +19,7 @@ typedef struct {
     AudioQueueBufferRef mBuffers[1];
     SInt64 currentPacket;
     long currIndex;
+    unsigned long freq; // not to be used always
     long message[MESSAGE_LEN];
 
 } PlayerState;
@@ -26,6 +27,7 @@ typedef struct {
 @property (nonatomic, assign) PlayerState playstate;
 
 - (void)play;
+- (void)playBeeps:(unsigned long)freq;
 - (void)pause;
 - (void)initializeAudio;
 @end

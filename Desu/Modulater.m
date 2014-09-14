@@ -81,13 +81,21 @@ void bufferPopulater(void * inUserData,
     UInt32 numPackets = numBytesToPlay/pPlayState->format.mBytesPerPacket;
 
 	SInt16 * buffer = (SInt16 *)inBuffer->mAudioData;
+    unsigned long freq;
 
-	for(long i = 0; i < numPackets; i++) {
-        long long idx = pPlayState->currentPacket++;
-        unsigned long freq = pPlayState->message[pPlayState->currIndex % MESSAGE_LEN];
-		buffer[i] = (SInt16) (sin(2 * M_PI * freq * idx / SR) * SHRT_MAX);
-	}
-    
+    if (pPlayState->freq > 0) {
+        for(long i = 0; i < numPackets/8; i++) {
+            long long idx = pPlayState->currentPacket++;
+            freq = pPlayState->freq;
+            buffer[i] = (SInt16) (sin(2 * M_PI * freq * idx / SR) * SHRT_MAX);
+        }
+    } else {
+        for(long i = 0; i < numPackets; i++) {
+            long long idx = pPlayState->currentPacket++;
+            freq = pPlayState->message[pPlayState->currIndex % MESSAGE_LEN];
+            buffer[i] = (SInt16) (sin(2 * M_PI * freq * idx / SR) * SHRT_MAX);
+        }
+    }
     NSLog(@"%lu", pPlayState->message[pPlayState->currIndex % MESSAGE_LEN]);
     // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     pPlayState->currIndex++;
@@ -112,12 +120,42 @@ void bufferPopulater(void * inUserData,
         _playstate.message[i] = i % 2 ? HI_FREQ : LOW_FREQ;
     }
     _playstate.currIndex = 0;
+    _playstate.freq = 0;
     return;
 }
 
 -(void)play {
     NSLog(@"Playing audio");
 
+    OSStatus status = noErr;
+    status = AudioQueueNewOutput(&_playstate.format,
+                                bufferPopulater,
+                                &_playstate,
+                                NULL,
+                                NULL,
+                                0,
+                                &_playstate.queue);
+    
+    if (status != noErr) {
+        NSLog(@"FUCCCGGGKKKKSDF");
+    }
+    
+    AudioQueueAllocateBuffer(_playstate.queue, BUFFER_SIZE, &_playstate.mBuffers[0]);
+    bufferPopulater(&_playstate, _playstate.queue, _playstate.mBuffers[0]);
+    
+    status = AudioQueueStart(_playstate.queue, NULL);
+    
+    if (status != noErr) {
+        NSLog(@"FUCCCGGGKKKKSDF");
+    }
+    
+    return;
+}
+
+-(void)playBeeps:(unsigned long) freq {
+    NSLog(@"Playing audio");
+
+    _playstate.freq = freq;
     OSStatus status = noErr;
     status = AudioQueueNewOutput(&_playstate.format,
                                 bufferPopulater,

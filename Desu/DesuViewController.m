@@ -56,7 +56,7 @@
     if (!_modulator) {
         _modulator = [Modulater new];
         [_modulator initializeAudio];
-        [_modulator play];
+        [_modulator playBeeps:HI_FREQ];
     }
 }
 
