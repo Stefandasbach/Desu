@@ -68,7 +68,7 @@
     }
     if (!_listener) {
         _listener = [Demodulater new];
-        [_listener setLabelHigh:_highLabel AndLow:_lowLabel];
+        [_listener setLabelHigh:_highLabel AndLow:_lowLabel AndRatio:_ratioLabel];
         [_listener initializeListener];
         [_listener listen];
     }

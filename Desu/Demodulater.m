@@ -86,18 +86,23 @@ int determineSpike(long numSamples, float* buffer,
 #define CLEAN 5
 static int last[CLEAN] = {-1, -1, -1};
 
+float runningAvg[100];
+
 -(void) labelUpdater{
     float hi_mag = goertzel_mag(SAMPLES_PER_READ, HI_FREQ, SR, _listener.fBuffer);
     float low_mag = goertzel_mag(SAMPLES_PER_READ, LOW_FREQ, SR, _listener.fBuffer);
+    float ratio = (hi_mag/low_mag);
     [_highLabel setText:[NSString stringWithFormat:@"%f",hi_mag]];
     [_lowLabel setText:[NSString stringWithFormat:@"%f",low_mag]];
-    NSLog(@"\nHI:%f\nLOW:%f",hi_mag, low_mag);
+    [_ratioLabel setText: [NSString stringWithFormat:@"%f",ratio]];
+    //NSLog(@"\nHI:%f\nLOW:%f",hi_mag, low_mag);
     //
 }
 
--(void)setLabelHigh:(UILabel *)highLabel AndLow:(UILabel *)lowLabel {
+-(void)setLabelHigh:(UILabel *)highLabel AndLow:(UILabel *)lowLabel AndRatio:(UILabel *)ratioLabel{
     _lowLabel = lowLabel;
     _highLabel = highLabel;
+    _ratioLabel = ratioLabel;
 }
 
 void bufferDecoder(void * inUserData,

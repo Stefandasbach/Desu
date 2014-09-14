@@ -15,6 +15,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *PlayButton;
 @property (weak, nonatomic) IBOutlet UILabel *highLabel;
 @property (weak, nonatomic) IBOutlet UILabel *lowLabel;
+@property (weak, nonatomic) IBOutlet UILabel *ratioLabel;
 
 @property (strong, nonatomic) Modulater *modulator;
 @property (strong, nonatomic) Demodulater *listener;

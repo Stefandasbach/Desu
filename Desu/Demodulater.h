@@ -23,13 +23,16 @@ typedef struct {
 
 @property (weak, nonatomic) IBOutlet UILabel *highLabel;
 @property (weak, nonatomic) IBOutlet UILabel *lowLabel;
+@property (weak, nonatomic) IBOutlet UILabel *ratioLabel;
 
 @property (nonatomic, assign) ListenerState listener;
 
 -(void)initializeListener;
 -(void)listen;
 -(void)pause;
--(void)setLabelHigh:(UILabel *)highLabel AndLow:(UILabel *)lowLabel;
+-(void)setLabelHigh:(UILabel *) highLabel
+             AndLow:(UILabel *) lowLabel
+           AndRatio:(UILabel *) ratioLabel;
 -(void) labelUpdater:(float *)buffer;
 
 @end
